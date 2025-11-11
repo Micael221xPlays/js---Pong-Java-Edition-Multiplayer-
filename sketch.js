@@ -37,6 +37,8 @@ function preload() {
 }
 
 function setup() {
+  let d = pixelDensity();
+  pixelDensity(2);
   createCanvas(600, 400);
   trilhaSonora.loop();
 }
@@ -147,3 +149,4 @@ function marcaPonto() {
     ponto.play();
   }
 }
+
